@@ -202,7 +202,7 @@ var force = (function () {
         // Parse the OAuth data received from Facebook
         var queryString,
             obj;
-
+        console.log("url===>" + url);
         if (url.indexOf("access_token=") > 0) {
             queryString = url.substr(url.indexOf('#') + 1);
             obj = parseQueryString(queryString);
